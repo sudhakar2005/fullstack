@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interactive Webpage</h1>
+    </header>
+    <form id="interactiveForm">
+        <label for="userInput">Enter your input:</label>
+        <input type="text" id="userInput" placeholder="Type something...">
+        <button type="submit">Submit</button>
+    </form>
+    <div class="output" id="output">
+        <p>Output will be displayed here.</p>
+    </div>
+
+    <script>
+        const form = document.getElementById('interactiveForm');
+        const outputDiv = document.getElementById('output');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const userInput = document.getElementById('userInput').value;
+            outputDiv.innerHTML = `<p>You entered: <strong>${userInput}</strong></p>`;
+        });
+    </script>
+</body>
+</html>
