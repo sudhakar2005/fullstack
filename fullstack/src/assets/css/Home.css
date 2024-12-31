@@ -1,0 +1,11 @@
+.box-model{
+    font-size: 100px;
+    margin: 100px;
+    border: 20px solid violet;
+    padding-left: 20px;
+}
+
+.idSEg{
+    color: gold;
+    text-align: center;
+}
