@@ -1,14 +1,14 @@
 ul{
-    padding: 0%;
+    padding: 2%;
     margin: 0%;
     text-decoration: none;
     list-style-type: none;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(111, 0, 255);
+    background-color: rgb(225, 0, 0);
     list-style-type: none;
-    color: rgb(6, 255, 255);
+    color: rgb(251, 239, 7);
 }
 
 li{

@@ -1,4 +1,4 @@
-/*import { useRef, useEffect, useState } from "react";
+ import { useRef, useEffect, useState } from "react";
 
  var UseRefNumber = () =>{
      const [name, setName] = useState('')
@@ -10,11 +10,10 @@
 
      return(
          <section>
-             <input value={name} onChange={e => setName(e.target.value)}/>
+            <input value={name} onChange={e => setName(e.target.value)}/>
              <div>College name is {name}</div>
              <div>I rendered {renderCount.current}</div>
          </section>
      )
  }
- export default UseRefNumber;
- */
+export default UseRefNumber;
